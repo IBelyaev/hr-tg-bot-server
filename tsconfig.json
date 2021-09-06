@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "incremental": true,
+        "target": "ES5",
+        "module": "esnext",
+        "lib": [
+            "dom",
+            "esnext"
+        ],
+        "allowJs": true,
+        "jsx": "react",        
+        "removeComments": false,
+        "resolveJsonModule": true,
+        "strict": true,
+        "moduleResolution": "node",        
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "preserveConstEnums": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "forceConsistentCasingInFileNames": true 
+    }
+}

@@ -1,0 +1,9 @@
+.user-table {
+    margin-top: 24px;
+    background-color: white;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+}
