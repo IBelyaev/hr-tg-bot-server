@@ -5,7 +5,6 @@ import mongoose from '../../common/services/mongoose.service';
 export interface UserDocument extends Document {
     surname: string;
     name: string;
-    phoneNumber: string;
     currentQuestion: number;
     isPassedScreening: boolean;
     goals: number;
@@ -14,7 +13,6 @@ export interface UserDocument extends Document {
 export const UserSchema = new mongoose.Schema({
     surname: String,
     name: String,
-    phoneNumber: String,
     currentQuestion: Number,
     isPassedScreening: Boolean,
     goals: Number,

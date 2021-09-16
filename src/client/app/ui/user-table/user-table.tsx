@@ -17,15 +17,13 @@ const UserTable = ({users = []}: Props) => {
             <div className={cn('row')}>
                 <div>Имя</div>
                 <div>Фамилия</div>
-                <div>Телефон</div>
                 <div>Прошел скрининг</div>
                 <div>Ссылка на бот</div>
             </div>
-            {users.map(({name, surname, phoneNumber, isPassedScreening, _id }) => (
+            {users.map(({name, surname, isPassedScreening, _id }) => (
                 <div className={cn('row')}>
                     <div>{name}</div>
                     <div>{surname}</div>
-                    <div>{phoneNumber}</div>
                     <div>{isPassedScreening ? 'да' : 'нет'}</div>
                     <div>https://t.me/HRAlfaBot?start={_id}</div>
                 </div>

@@ -1,19 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import { createCn } from 'bem-react-classname';
 import { Typography } from '@alfalab/core-components/typography';
 import { Button } from '@alfalab/core-components/button';
 
 import { UserDocument } from '../../server/users/models/users.model';
+import { getUsers } from './async-fns';
 import UserTable from './ui/user-table';
+import UserCreationWindow from './ui/user-creation-window';
 
 import './app.css';
 
 const cn = createCn('app');
-
-async function getUsers() {
-    return axios.get<UserDocument[]>('http://localhost:8000/users');
-}
 
 const App = () => {
     const [isModalOpen, setOpenModal] = useState(false);
@@ -42,6 +39,7 @@ const App = () => {
                 Новый скрининг
             </Button>
             { userList && <UserTable users={userList} /> }
+            <UserCreationWindow isOpen={isModalOpen} onModalOpen={handleCloseModal} />
         </div>
     );
 };

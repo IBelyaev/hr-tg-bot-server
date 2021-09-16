@@ -2,69 +2,79 @@
 # yarn lockfile v1
 
 
-"@alfalab/core-components@^10.4.2":
-  version "10.4.2"
-  resolved "https://registry.yarnpkg.com/@alfalab/core-components/-/core-components-10.4.2.tgz#f6cccc4c1feac1934cee4597ad048fc21f9afed1"
-  integrity sha512-lUGVCKyQTR/+I9MjjX91SKKD7ErNG30BKcx9YH08iNrLSvNvmZdViby6zBCMG6GEEWBtETGddDCCtfR+01SIvw==
+"@alfalab/core-components@20.0.0":
+  version "20.0.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/core-components/-/core-components-20.0.0.tgz#83b9e17f50e6c8dcfed1d225dfa9bea26a272644"
+  integrity sha512-lMEgMVIKLII9y6Hbxm5IFFO8RYVqcSN1piFGHYbkfelxNIfwm0Bf8LH5tw3lmTozpbVFUitdq6Wf21WO/g0QwA==
   dependencies:
-    "@alfalab/data" "^0.3.0"
-    "@alfalab/hooks" "^1.0.0"
-    "@alfalab/icons-classic" "^1.56.0"
-    "@alfalab/icons-flag" "^1.3.0"
-    "@alfalab/icons-glyph" "^1.96.0"
-    "@alfalab/icons-logotype" "^1.9.0"
-    "@alfalab/utils" "^1.0.1"
+    "@alfalab/data" "^0.4.3"
+    "@alfalab/hooks" "^1.2.0"
+    "@alfalab/icons-classic" "^1.74.0"
+    "@alfalab/icons-flag" "^1.9.0"
+    "@alfalab/icons-glyph" "^1.150.0"
+    "@alfalab/icons-logotype" "^1.19.0"
+    "@alfalab/stylelint-core-vars" "^1.1.0"
+    "@alfalab/utils" "^1.3.0"
     "@popperjs/core" "^2.3.3"
-    alfa-ui-primitives "^2.105.0"
+    alfa-ui-primitives "^2.234.0"
     classnames "^2.2.6"
     compute-scroll-into-view "^1.0.13"
     date-fns "^2.16.1"
     downshift "5.4.7"
+    element-closest "^3.0.2"
+    intersection-observer "^0.12.0"
     libphonenumber-js "^1.8.4"
     lodash.debounce "^4.0.8"
+    react-focus-lock "^2.5.0"
     react-merge-refs "^1.1.0"
     react-node-resolver "^2.0.1"
     react-popper "^2.2.2"
-    react-swipeable "^6.0.0"
+    react-swipeable "^5.5.0"
     react-textarea-autosize "^8.2.0"
     react-transition-group "^4.3.0"
     react-virtual "^2.2.0"
+    resize-observer "^1.0.0"
     text-mask-core "^5.1.2"
 
-"@alfalab/data@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@alfalab/data/-/data-0.3.0.tgz#0c424ed39186bcd05d0f76d93a70610e01d9a38a"
-  integrity sha512-8+dlxoOGe/2X3MirHCca9//PtYwBkyakzMcLKNMRC9P0jNzrz+IUVkxSab5UPwWOaXKWm81c70EvQfu6W9wXUw==
+"@alfalab/data@^0.4.3":
+  version "0.4.8"
+  resolved "https://registry.yarnpkg.com/@alfalab/data/-/data-0.4.8.tgz#2425c046115c0dbc9d7e1c76db6752d6e45598e2"
+  integrity sha512-oMSZORESvPZMkc5oBX8+zj/L8V/fPyqHSyEPUl4nxV4BE7xoZKl6LADzUQQV/BWLK7RwJ1LPZvd2ktnti2fN1g==
 
-"@alfalab/hooks@^1.0.0":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@alfalab/hooks/-/hooks-1.1.1.tgz#c61e839983cb915e2e4de730bf9c9b0f1c0aea45"
-  integrity sha512-4NBh/BzFE/W7Wxgxa0SByodjpDgUQT5RHzc/9wLbMlhljpo+S145mavFdtK+YcJ2Sg4GK6OZon61KqV5w7Nafw==
+"@alfalab/hooks@^1.2.0":
+  version "1.3.5"
+  resolved "https://registry.yarnpkg.com/@alfalab/hooks/-/hooks-1.3.5.tgz#ae0f945174f5dd0741050f17e07b7d8257768296"
+  integrity sha512-770yEMV3qhf1rrTn+a/VERQoYn79Il30er9IekiyjlcuHleOewjZi/cH1XHG7cOOcDHpKCiJEstyNi/MDxXfXw==
 
-"@alfalab/icons-classic@^1.56.0":
-  version "1.57.0"
-  resolved "https://registry.yarnpkg.com/@alfalab/icons-classic/-/icons-classic-1.57.0.tgz#3f43d835254926cc0a7dee2c6fc2ae3e8294bd7b"
-  integrity sha512-ojsnlOY5DOL6JCi7tiRPjBmN1si+UECsPBY5bKZqF0G/JaI7YC09Kp+A+yXYG4hhsBDXq0ZLFHwfV8G8h5ihMg==
+"@alfalab/icons-classic@^1.74.0":
+  version "1.74.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/icons-classic/-/icons-classic-1.74.0.tgz#d0150a0c31dfe98dd88bb1ecf47d1073589321f6"
+  integrity sha512-6TGBrkie7dguGG576ZfMM60QMm4RYyTDDgPZb7uN0n5wa4NhAD9ONppqumnuPkqqnHSm73juWjSH4wkEhvqiug==
 
-"@alfalab/icons-flag@^1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@alfalab/icons-flag/-/icons-flag-1.3.0.tgz#edd1b82a92954ed5339d51083d83ec41f7ff77fb"
-  integrity sha512-kvVrwjKw6TZfbr9xaK7/e/QtkOAT5HzsWTI2rtvrIp0tzwnkQzp1cCHsiX/mt6h+YOixWfDGYbYEL2RKHFrBaw==
-
-"@alfalab/icons-glyph@^1.96.0":
-  version "1.101.0"
-  resolved "https://registry.yarnpkg.com/@alfalab/icons-glyph/-/icons-glyph-1.101.0.tgz#5baa4b850519444965afbc82b33de5f19484b58e"
-  integrity sha512-YECpsYd50A6lU9VtBVkBSAUWFnlfpBoxYTpMbXGzxhn1YYyYSKarh0Im5/i+xnRJLnUB8mabHXRZy1kP5bPmSA==
-
-"@alfalab/icons-logotype@^1.9.0":
+"@alfalab/icons-flag@^1.9.0":
   version "1.9.0"
-  resolved "https://registry.yarnpkg.com/@alfalab/icons-logotype/-/icons-logotype-1.9.0.tgz#5e0b96830cdd6cfaa49039f10abc39e05ef6e03e"
-  integrity sha512-rpHRXXhsER+YyYSn63sMVLhXU5BpY0nkfjKNffsJvOv+8+eTbjjzEDfdxtN+1/C1ZiqcXQXTJ1ItKJnrKzf5Jg==
+  resolved "https://registry.yarnpkg.com/@alfalab/icons-flag/-/icons-flag-1.9.0.tgz#4c9a4b9738a00694253803cb36fc243bcf3daa7a"
+  integrity sha512-JA41pz/OVc0a2CRYPTNl++q5kLJWEH3il9+utDuTMm25d2v81Z0bWcOgYwu6uRBQaFOuKbbui5Wl+vdjZgC7Lg==
 
-"@alfalab/utils@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@alfalab/utils/-/utils-1.0.1.tgz#6af0cc51229bbd1243c8480a535845fc51811d71"
-  integrity sha512-2PEWKVvctknYgMZei0o09BxbJ53fZDnpBl7Nfcy0vureiwwAe/IuwNZOjqwfzEbHAiLnx5CN4ZbXtOur1n06oA==
+"@alfalab/icons-glyph@^1.150.0":
+  version "1.176.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/icons-glyph/-/icons-glyph-1.176.0.tgz#d9e0cdcc9b0ea6f4ef2fa144218e254306af2e20"
+  integrity sha512-aiuYjDC4Sxbm5vYaQ989D0iHpQPxmgrzUiq/FmbbKp4jmBeT0lJYZQkNQHxMLLsnxI+x1nlKV236N/WGbNG2DA==
+
+"@alfalab/icons-logotype@^1.19.0":
+  version "1.23.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/icons-logotype/-/icons-logotype-1.23.0.tgz#265aca78cf5b122cf5c970f7c840711625496bff"
+  integrity sha512-G5irCi3QipAHwKzL622U4cHqDnyHTUE4ZXkJQAGkXU6QvjtW5nmRw/9MpEhDS7cCY+QX5NbMlHBvy6I+O0TVzg==
+
+"@alfalab/stylelint-core-vars@^1.1.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@alfalab/stylelint-core-vars/-/stylelint-core-vars-1.3.0.tgz#5dd287e38be0b3127f117ec26c8fdff489493d07"
+  integrity sha512-hR2Ne1LcSvtJv9l4N0/t501GuzKUgooLSfdI7+rTwzFr5Jc3U2sQnS7t+VmuA4kSCuzLI60Q+Ab4JFjAM+JyBA==
+
+"@alfalab/utils@^1.3.0":
+  version "1.4.5"
+  resolved "https://registry.yarnpkg.com/@alfalab/utils/-/utils-1.4.5.tgz#c8e556b87cd90fa871d19bb76011c2690592ca50"
+  integrity sha512-tm1HVbttc2c+MBnh6jni8Ov4bLcVWz7xqoZL7RhtIvH9c4P0SFO2WrldJFzKCvaKkB0A/WVFf6ylmQK3NVzmkA==
 
 "@babel/code-frame@^7.0.0":
   version "7.12.13"
@@ -86,6 +96,13 @@
     "@babel/helper-validator-identifier" "^7.12.11"
     chalk "^2.0.0"
     js-tokens "^4.0.0"
+
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.12.13":
+  version "7.15.4"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.15.4.tgz#fd17d16bfdf878e6dd02d19753a39fa8a8d9c84a"
+  integrity sha512-99catp6bHCaxr4sJ/DbTGgHS4+Rs2RVd2g7iOap6SLGPDknRK9ztKNsE/Fg6QhSeh1FGE5f6gHGQmvvn3I3xhw==
+  dependencies:
+    regenerator-runtime "^0.13.4"
 
 "@babel/runtime@^7.10.0":
   version "7.13.7"
@@ -555,10 +572,10 @@ ajv@^6.1.0, ajv@^6.12.5:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-alfa-ui-primitives@^2.105.0:
-  version "2.147.0"
-  resolved "https://registry.yarnpkg.com/alfa-ui-primitives/-/alfa-ui-primitives-2.147.0.tgz#2d22a752002924a2dbcc5938d9ffe6be6b8a31a4"
-  integrity sha512-93aXv/oKuseoqy7USEGJv0zlhCpggOHNgbxE9NBxGPFTt+/3DT6fMUHWkZUg2Q8mueHa++Um086y/aXvgSHZ0g==
+alfa-ui-primitives@^2.234.0:
+  version "2.247.0"
+  resolved "https://registry.yarnpkg.com/alfa-ui-primitives/-/alfa-ui-primitives-2.247.0.tgz#11830402215799531ef7ea77342fef8c10b893ca"
+  integrity sha512-hRxod5L7v6quJb9VErqmqBA1ELrpVc3FuL9YnMVfw4nCmBcwUWPkW+FFeqXEPdAg/DTNuLd1UTHGqZMZ4IZVJw==
 
 alphanum-sort@^1.0.0:
   version "1.0.2"
@@ -1283,6 +1300,11 @@ destroy@~1.0.4:
   resolved "https://registry.yarnpkg.com/destroy/-/destroy-1.0.4.tgz#978857442c44749e4206613e37946205826abd80"
   integrity sha1-l4hXRCxEdJ5CBmE+N5RiBYJqvYA=
 
+detect-node-es@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/detect-node-es/-/detect-node-es-1.1.0.tgz#163acdf643330caa0b4cd7c21e7ee7755d6fa493"
+  integrity sha512-ypdmJU/TbBby2Dxibuv7ZLW3Bs1QEmM7nHjEANfohJLvE0XVujisn1qPJcZxg+qDucsr+bP6fLD1rPS3AhJ7EQ==
+
 dom-converter@^0.2:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/dom-converter/-/dom-converter-0.2.0.tgz#6721a9daee2e293682955b6afe416771627bb768"
@@ -1407,6 +1429,11 @@ electron-to-chromium@^1.3.649:
   version "1.3.664"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.664.tgz#8fb039e2fa8ef3ab2568308464a28425d4f6e2a3"
   integrity sha512-yb8LrTQXQnh9yhnaIHLk6CYugF/An50T20+X0h++hjjhVfgSp1DGoMSYycF8/aD5eiqS4QwaNhiduFvK8rifRg==
+
+element-closest@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/element-closest/-/element-closest-3.0.2.tgz#3814a69a84f30e48e63eaf57341f4dbf4227d2aa"
+  integrity sha512-JxKQiJKX0Zr5Q2/bCaTx8P+UbfyMET1OQd61qu5xQFeWr1km3fGaxelSJtnfT27XQ5Uoztn2yIyeamAc/VX13g==
 
 emojis-list@^3.0.0:
   version "3.0.0"
@@ -1744,6 +1771,13 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
 
+focus-lock@^0.9.1:
+  version "0.9.2"
+  resolved "https://registry.yarnpkg.com/focus-lock/-/focus-lock-0.9.2.tgz#9d30918aaa99b1b97677731053d017f82a540d5b"
+  integrity sha512-YtHxjX7a0IC0ZACL5wsX8QdncXofWpGPNoVMuI/nZUrPGp6LmNI6+D5j0pPj+v8Kw5EpweA+T5yImK0rnWf7oQ==
+  dependencies:
+    tslib "^2.0.3"
+
 follow-redirects@^1.10.0:
   version "1.13.2"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.2.tgz#dd73c8effc12728ba5cf4259d760ea5fb83e3147"
@@ -2069,6 +2103,11 @@ interpret@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-2.2.0.tgz#1a78a0b5965c40a5416d007ad6f50ad27c417df9"
   integrity sha512-Ju0Bz/cEia55xDwUWEa8+olFpCiQoypjnQySseKtmjNrnps3P+xfpUmGr90T7yjlVJmOtybRvPXhKMbHr+fWnw==
+
+intersection-observer@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/intersection-observer/-/intersection-observer-0.12.0.tgz#6c84628f67ce8698e5f9ccf857d97718745837aa"
+  integrity sha512-2Vkz8z46Dv401zTWudDGwO7KiGHNDkMv417T5ItcNYfmvHR/1qCTVBO9vwH8zZmQ0WkA/1ARwpysR9bsnop4NQ==
 
 ipaddr.js@1.9.1:
   version "1.9.1"
@@ -3802,6 +3841,13 @@ raw-body@2.4.0:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
+react-clientside-effect@^1.2.5:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/react-clientside-effect/-/react-clientside-effect-1.2.5.tgz#e2c4dc3c9ee109f642fac4f5b6e9bf5bcd2219a3"
+  integrity sha512-2bL8qFW1TGBHozGGbVeyvnggRpMjibeZM2536AKNENLECutp2yfs44IL8Hmpn8qjFQ2K7A9PnYf3vc7aQq/cPA==
+  dependencies:
+    "@babel/runtime" "^7.12.13"
+
 react-dom@17.0.1:
   version "17.0.1"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-17.0.1.tgz#1de2560474ec9f0e334285662ede52dbc5426fc6"
@@ -3827,6 +3873,18 @@ react-final-form@^6.5.2:
   integrity sha512-c5l45FYOoxtfpvsvMFh3w2WW8KNxbuebBUrM16rUrooQkewTs0Zahmv0TuKFX5jsC9BKn5Fo84j3ZVXQdURS4w==
   dependencies:
     "@babel/runtime" "^7.12.1"
+
+react-focus-lock@^2.5.0:
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/react-focus-lock/-/react-focus-lock-2.5.2.tgz#f1e4db5e25cd8789351f2bd5ebe91e9dcb9c2922"
+  integrity sha512-WzpdOnEqjf+/A3EH9opMZWauag7gV0BxFl+EY4ElA4qFqYsUsBLnmo2sELbN5OC30S16GAWMy16B9DLPpdJKAQ==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    focus-lock "^0.9.1"
+    prop-types "^15.6.2"
+    react-clientside-effect "^1.2.5"
+    use-callback-ref "^1.2.5"
+    use-sidecar "^1.0.5"
 
 react-is@^16.13.1, react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"
@@ -3862,10 +3920,12 @@ react-redux@7.2.2:
     prop-types "^15.7.2"
     react-is "^16.13.1"
 
-react-swipeable@^6.0.0:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/react-swipeable/-/react-swipeable-6.0.1.tgz#14246e798c25a00da3279632a87811411756f652"
-  integrity sha512-69nonicgjT4ofeHxZSpjuz37BoIiWMEbUYkX0mdTCY2mX1U53XDzDUIOVKRg6vVBNGL+pxYjbRzmylXWORh1xQ==
+react-swipeable@^5.5.0:
+  version "5.5.1"
+  resolved "https://registry.yarnpkg.com/react-swipeable/-/react-swipeable-5.5.1.tgz#48ae6182deaf62f21d4b87469b60281dbd7c4a76"
+  integrity sha512-EQObuU3Qg3JdX3WxOn5reZvOSCpU4fwpUAs+NlXSN3y+qtsO2r8VGkVnOQzmByt3BSYj9EWYdUOUfi7vaMdZZw==
+  dependencies:
+    prop-types "^15.6.2"
 
 react-textarea-autosize@^8.2.0:
   version "8.3.1"
@@ -3989,6 +4049,11 @@ reselect@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/reselect/-/reselect-4.0.0.tgz#f2529830e5d3d0e021408b246a206ef4ea4437f7"
   integrity sha512-qUgANli03jjAyGlnbYVAV5vvnOmJnODyABz51RdBN7M4WaVu8mecZWgyQNkG8Yqe3KRGRt0l4K4B3XVEULC4CA==
+
+resize-observer@^1.0.0:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/resize-observer/-/resize-observer-1.0.2.tgz#9a87697b275343d12d8b371940e02e9a93e1f452"
+  integrity sha512-X0lHFNsxItpBRIRsdwOTkl/VguTaLGx7Gz9xoTGix9ObBN3jRYq9J/rSIuYDrey8AdU3IkfgIMpCeVSEW1QS0Q==
 
 resolve-cwd@^3.0.0:
   version "3.0.0"
@@ -4499,7 +4564,7 @@ ts-toolbelt@^6.4.2:
   resolved "https://registry.yarnpkg.com/ts-toolbelt/-/ts-toolbelt-6.15.5.tgz#cb3b43ed725cb63644782c64fbcad7d8f28c0a83"
   integrity sha512-FZIXf1ksVyLcfr7M317jbB67XFJhOO1YqdTcuGaq9q5jLUoTikukZ+98TPjKiP2jC5CgmYdWWYs0s2nLSU0/1A==
 
-tslib@^1.9.0:
+tslib@^1.9.0, tslib@^1.9.3:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
@@ -4597,6 +4662,11 @@ url-loader@4.1.1:
     mime-types "^2.1.27"
     schema-utils "^3.0.0"
 
+use-callback-ref@^1.2.5:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/use-callback-ref/-/use-callback-ref-1.2.5.tgz#6115ed242cfbaed5915499c0a9842ca2912f38a5"
+  integrity sha512-gN3vgMISAgacF7sqsLPByqoePooY3n2emTH59Ur5d/M8eg4WTWu1xp8i8DHjohftIyEx0S08RiYxbffr4j8Peg==
+
 use-composed-ref@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/use-composed-ref/-/use-composed-ref-1.1.0.tgz#9220e4e94a97b7b02d7d27eaeab0b37034438bbc"
@@ -4615,6 +4685,14 @@ use-latest@^1.0.0:
   integrity sha512-d2TEuG6nSLKQLAfW3By8mKr8HurOlTkul0sOpxbClIv4SQ4iOd7BYr7VIzdbktUCnv7dua/60xzd8igMU6jmyw==
   dependencies:
     use-isomorphic-layout-effect "^1.0.0"
+
+use-sidecar@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/use-sidecar/-/use-sidecar-1.0.5.tgz#ffff2a17c1df42e348624b699ba6e5c220527f2b"
+  integrity sha512-k9jnrjYNwN6xYLj1iaGhonDghfvmeTmYjAiGvOr7clwKfPjMXJf4/HOr7oT5tJwYafgp2tG2l3eZEOfoELiMcA==
+  dependencies:
+    detect-node-es "^1.1.0"
+    tslib "^1.9.3"
 
 util-deprecate@^1.0.1, util-deprecate@^1.0.2, util-deprecate@~1.0.1:
   version "1.0.2"
