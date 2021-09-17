@@ -8,6 +8,8 @@ export interface UserDocument extends Document {
     currentQuestion: number;
     isPassedScreening: boolean;
     goals: number;
+    startDate: string;
+    finishDate: string;
 };
 
 export const UserSchema = new mongoose.Schema({
@@ -16,6 +18,8 @@ export const UserSchema = new mongoose.Schema({
     currentQuestion: Number,
     isPassedScreening: Boolean,
     goals: Number,
+    startDate: String,
+    finishDate: String,
 });
 
 const UserModel = mongoose.model<UserDocument>('User', UserSchema);
@@ -24,6 +28,8 @@ const DEFAULT_USER_FIELDS = {
     currentQuestion: 0,
     isPassedScreening: false,
     goals: 0,
+    startDate: '',
+    finishDate: '',
 };
 
 const UserModels = {
