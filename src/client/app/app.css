@@ -2,12 +2,12 @@ body {
     margin: 0;
 }
 
+#react-container {
+    height: 100vh;
+}
+
 .app {
     background-color: #dae0e6;
     padding: 24px 45px;
     min-height: 100%;
-
-    &__create-btn {
-        margin: 24px 0;
-    }
 }

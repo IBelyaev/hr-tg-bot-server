@@ -1,0 +1,5 @@
+.main-page {
+    &__create-btn {
+        margin: 24px 0;
+    }
+}
