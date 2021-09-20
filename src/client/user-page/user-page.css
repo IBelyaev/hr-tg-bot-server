@@ -1,3 +1,5 @@
 .user-page {
-
+    &__title, &__row {
+        margin-bottom: 24px;
+    }
 }
