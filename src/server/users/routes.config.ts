@@ -10,7 +10,8 @@ export default function (app: Express) {
         UserModels.list
     ])
 
-    // app.get('/users/:userId', [
-    //     // BlogController.getBlog
-    // ])
+    app.get<unknown, unknown, unknown, Partial<Record<'userId', string>>>(
+        '/user',
+        [UserModels.getUser]
+    )
 };

@@ -50,6 +50,18 @@ const UserModels = {
                 })
         });
     },
+    getUser: (id: string) => {
+        return new Promise<UserDocument | null>((resolve, reject) => {
+            UserModel.findById(id)
+                .exec((err, user) => {
+                    if (err) {
+                        reject(err);
+                    } else {
+                        resolve(user);
+                    }
+                })
+        });
+    },
 };
 
 export default UserModels;

@@ -17,6 +17,20 @@ const UserController = {
                 res.status(200).send(result);
             });
     },
+    getUser: (
+        req: express.Request<unknown, unknown, unknown, Partial<Record<'userId', string>>>,
+        res: express.Response<UserDocument | null>
+    ) => {  
+        const { userId = '' } = req.query;
+
+        UserModels
+            .getUser(userId)
+            .then((result) => {
+                res.status(200).send(result);
+            }).catch((error) => {
+                res.status(400).send(error);
+            });
+    },
     // delete: (req: express.Request, res: express.Response) => {    
     //     const { blog_id } = req.params;
 

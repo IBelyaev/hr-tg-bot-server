@@ -1,5 +1,7 @@
 import axios from 'axios';
 
+import { UserDocument } from '../../server/users/models/users.model';
+
 type CreateUsersBody = Record<'name' | 'surname', string>;
 
 const UserServiceEndpoint = 'http://localhost:8000/users';
@@ -17,5 +19,5 @@ export async function createUsers(body: CreateUsersBody) {
 };
 
 export async function getUsers() {
-    return axios.get(UserServiceEndpoint);
+    return axios.get<UserDocument[]>(UserServiceEndpoint);
 };
