@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+
 import { ModalDesktop } from '@alfalab/core-components/modal/desktop';
 import { Typography } from '@alfalab/core-components/typography';
 import { Button } from '@alfalab/core-components/button';
 import { Input } from '@alfalab/core-components/input';
 
 import { createUsers } from '../../async-fns';
+import { getData } from '../../../ducks/users';
 
 type Props = {
     isOpen: boolean;
@@ -14,6 +17,7 @@ type Props = {
 const UserCreationWindow = ({isOpen, onModalOpen}: Props) => {
     const [name, setName] = useState('');
     const [surname, setSurname] = useState('');
+    const dispatch = useDispatch();
 
     const changeName = (_event: React.ChangeEvent<HTMLInputElement>, payload: {
         value: string;
@@ -25,6 +29,8 @@ const UserCreationWindow = ({isOpen, onModalOpen}: Props) => {
 
     const onSubmitBtn = async () => {
         await createUsers({name, surname});
+        
+        dispatch(getData());
 
         onModalOpen();
     };

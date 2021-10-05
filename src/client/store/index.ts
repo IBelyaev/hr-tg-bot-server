@@ -1,12 +1,10 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import thunk from 'redux-thunk';
 
-// import blogsReducer from '../app/ducks/blogs';
-// import modalManagerReducer from '../app/ducks/modal-manager';
+import usersReducer from '../ducks/users';
 
 const rootReducer = combineReducers({
-    // blogs: blogsReducer,
-    // modalManager: modalManagerReducer,
+    userSlice: usersReducer,
 });
 
 export type RootState = ReturnType<typeof rootReducer>;

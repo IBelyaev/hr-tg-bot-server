@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { RouteProps } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
 import { createCn } from 'bem-react-classname';
 import { Typography } from '@alfalab/core-components/typography';
 import { Button } from '@alfalab/core-components/button';
 
 import { UserDocument } from '../../server/users/models/users.model';
-import { getUsers } from './async-fns';
 import UserTable from './ui/user-table';
 import UserCreationWindow from './ui/user-creation-window';
+import { getData } from '../ducks/users';
+import { usersSelector } from '../ducks/users/selectors';
 
 import './main-page.css';
 
@@ -15,15 +17,14 @@ const cn = createCn('main-page');
 
 const MainPage: React.FunctionComponent<RouteProps> = React.memo(() => {
     const [isModalOpen, setOpenModal] = useState(false);
-    const [userList, setUserList] = useState<UserDocument[] | null>(null);
+    const dispatch = useDispatch();
+    const users = useSelector(usersSelector);
 
     const handleOpenModal = () => setOpenModal(true);
     const handleCloseModal = () => setOpenModal(false);
 
     useEffect(() => {
-        getUsers().then(({data}) => {
-            setUserList(data);
-        })
+        dispatch(getData());
     }, [])
 
     return (
@@ -39,7 +40,7 @@ const MainPage: React.FunctionComponent<RouteProps> = React.memo(() => {
             >
                 Новый скрининг
             </Button>
-            { userList && <UserTable users={userList} /> }
+            { users && <UserTable users={users} /> }
             <UserCreationWindow isOpen={isModalOpen} onModalOpen={handleCloseModal} />
         </div>
     );
