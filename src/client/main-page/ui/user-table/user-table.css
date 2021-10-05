@@ -1,9 +1,21 @@
 .user-table {
     margin-top: 24px;
-    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
 
-    &__row {
+    &__tab-wrapper {
+        width: 150px;
+        height: 150px;
+        background-color: red;
+        margin-right: 20px;
+        cursor: pointer;
+        margin-top: 20px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+
+        &:last-of-type {
+            margin-right: 0px;
+        }
     }
 }
