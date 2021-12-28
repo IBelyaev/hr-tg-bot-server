@@ -2,7 +2,7 @@ FROM node:12-alpine
 
 COPY . .
 
-RUN yarn && yarn build:dev
+RUN yarn && yarn build:prod
 
 EXPOSE 8000
 
