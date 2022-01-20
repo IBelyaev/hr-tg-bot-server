@@ -1,0 +1,26 @@
+# docker-compose.yml
+
+version: "3.7"
+services:
+    mongo:
+        image: mongo
+        ports:
+            - '27017:27017'
+        environment:
+            MONGO_INITDB_ROOT_PASSWORD: secret
+            MONGO_INITDB_ROOT_USERNAME: mongoadmin
+        volumes:
+            - ./db-data:/data/db
+
+    server:
+        build:
+            context: .
+        depends_on:
+            - mongo
+        env_file:
+            - variables.env
+        ports:
+            - '8000:8000'
+
+volumes:
+    db-data:

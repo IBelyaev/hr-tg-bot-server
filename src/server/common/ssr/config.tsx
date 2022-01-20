@@ -1,4 +1,4 @@
-import { Express } from 'express';
+import { Express, RequestHandler } from 'express';
 import webpackDevMiddleware from 'webpack-dev-middleware';
 import webpackHotMiddleware from 'webpack-hot-middleware';
 import ReactDomServer from 'react-dom/server';
@@ -33,9 +33,9 @@ const Html = (url: string, context: Object) => ReactDomServer.renderToString(
 export default function (app: Express) {
     app.use(webpackDevMiddleware(compiler, {
         publicPath: config.output.publicPath
-    }));
+    }) as RequestHandler);
     
-    app.use(webpackHotMiddleware(compiler));
+    app.use(webpackHotMiddleware(compiler) as RequestHandler);
     
     app.get('/*', (req, res) => {
         const context = {};

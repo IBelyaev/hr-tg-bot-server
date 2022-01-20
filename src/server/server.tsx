@@ -1,7 +1,6 @@
 import path from 'path';
-import express from 'express';
-import bodyParser from 'express';
-
+import bodyParser from 'body-parser';
+import express, { RequestHandler } from 'express';
 // import BlogsRoutesConfig from './blogs/routes.config';
 import UsersRoutesConfig from './users/routes.config';
 import SSRConfig from '../server/common/ssr/config';
@@ -22,7 +21,8 @@ app.use(function (req, res, next) {
         return next();
     }
 });
-app.use(bodyParser.json());
+
+app.use(bodyParser.json() as RequestHandler);
 
 if (IS_PRODUCTION) {
     app.use(express.static(path.join(__dirname)));

@@ -1,20 +1,19 @@
-import mongoose from 'mongoose';
+import mongoose, { ConnectOptions } from 'mongoose';
 
 let count = 0;
 
-const options = {
-    autoIndex: false,
-    poolSize: 10,
-    bufferMaxEntries: 0,
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false
+// TODO: вынести это в отдельные переменные окружения
+const options: ConnectOptions = {
+    pass: 'secret',
+    user: 'mongoadmin',
 };
+
+const MONGO_URL = process.env.MONGO_HOST || 'localhost';
 
 const connectWithRetry = () => {
     console.log('MongoDB connection with retry');
 
-    mongoose.connect('mongodb://mongo:27017/database', options).then(() => {
+    mongoose.connect(`mongodb://${MONGO_URL}`, options).then(() => {
         console.log('MongoDB is connected');
     }).catch(err=>{
         console.log('MongoDB connection unsuccessful, retry after 5 seconds. ', ++count);
