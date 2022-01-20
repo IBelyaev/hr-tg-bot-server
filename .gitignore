@@ -1,3 +1,7 @@
 node_modules/
 dist/
 .DS_Store
+db-data/
+tg-bot-dist/
+variables.env
+yarn-error.log
